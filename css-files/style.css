@@ -202,6 +202,13 @@ canvas
     margin-top: 11%;
 }
 
+@media screen and (max-width : 600px)
+{
+    .about_content
+    {
+        width: 100vw;
+    }
+}
 .about
 {
     width: 100vw;
