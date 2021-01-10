@@ -12,6 +12,7 @@ body
 
 .navbar
 {
+    width: 100vw;
     background-color: black !important;
     z-index: 1;
 }
@@ -195,7 +196,10 @@ canvas
     margin-top: 11%;
 }
 
-
+.about
+{
+    width: 100vw;
+}
 
 #resume
 {
@@ -225,6 +229,7 @@ section > header
 
 section .skill
 {
+    width: 100vw;
     margin-top: 6%;
     display: grid;
     grid-gap: 16px;
