@@ -75,7 +75,7 @@ canvas
 {
     #particles
     {
-      width: auto;
+      width: 100vw;
     }
 }
 
@@ -166,11 +166,13 @@ canvas
     margin-top: 4%;
 }
 
-@media only screen and (max-width: 768px) {
-    #aboutbg{
-      width: auto;
+@media only screen and (max-width: 768px) 
+{
+    #aboutbg
+    {
+      width: 100vw;
     }
-  }
+}
 
 .span4 img {
     align-items: center;
