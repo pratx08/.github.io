@@ -17,31 +17,15 @@ body
 }
 .navbar .navbar-nav li a
 {
-    filter: blur(1.5px);
     color:white !important;
-    transition: transform .2s;
 }
 
 .nav-link:hover
 {
-    filter: blur(0px) !important;
-    transform: scale(1.15);
+    box-sizing: content-box;
+    background-color: #ff027860;
+    border-radius: 5px;
     color: white;
-}
-
-.nav-link a :active
-{
-    transform: 0.8;
-}
-
-
-@media only screen and (max-width: 768px) {
-    .nav-link:hover
-    {
-        filter: blur(0px) !important;
-        transform: scale(1.04);
-        color: white;
-    }
 }
 
 .navbar-toggler
@@ -59,7 +43,7 @@ canvas
 
 #particles
 {
-    filter: blur(0px);
+    filter: blur(1.8px);
     min-height: 92vh;
     max-height: fit-content;
     width: 100%;
@@ -169,23 +153,7 @@ canvas
 
 .block
 {
-    height: 100vh;
-}
-
-@media screen and (max-width : 600px)
-{
-    .span4 img
-    {
-        margin-left: 17%;
-    }
-}
-
-@media screen and (max-width : 600px)
-{
-    .block
-    {
-        height: auto;
-    }
+    height: auto;
 }
 
 .about_content
@@ -194,8 +162,6 @@ canvas
     margin-left: 10px;
     margin-top: 11%;
 }
-
-
 
 #resume
 {
@@ -252,7 +218,7 @@ section .skill
 .skill .set
 {
     border: 1px solid;
-    box-shadow: 0px 10px 10px #36363699;
+    box-shadow: 0px 6px 8px #36363690;
     border-color: #00000030;
     background-color: white;
     padding: 24px;
@@ -283,21 +249,9 @@ section .skill
 
 .skills
 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(90deg, #f2709c, #ff9472);
-}
-
-@media only screen and (max-width: 768px) 
-{
-    .skills
-    {
-      height: auto;
-    }
+    height: auto;
+    background-image: linear-gradient(135deg, #FC466B95, #3F5EFB95);
 }
 
 .set > header
@@ -321,15 +275,14 @@ section .skill
     color: var(--text);
 }
 
-.accessory 
-{
+.accessory {
     height: 6px;
     background-image: radial-gradient(
-    closest-side,
-    hsla(0, 0%, 50%, 1.0),
-    hsla(0, 0%, 50%, 0) 100%);
+      closest-side,
+      hsla(0, 0%, 50%, 1.0),
+      hsla(0, 0%, 50%, 0) 100%);
     position: relative;
-}
+  }
 
 
 .project-bg
@@ -345,14 +298,11 @@ section .skill
     align-items: center;
 }
 
-@media only screen and (max-width: 768px) 
-{
-    .project
-    {
+@media only screen and (max-width: 768px) {
+    .project{
       height: 158vh;
     }
-}
-
+  }
 .project_header
 {
     margin-top: 3%;
@@ -382,10 +332,9 @@ section .skill
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: 0.5s ease-in-out !important;
 }
-
 .project .card:hover
 {
     height: 460px;
@@ -441,12 +390,6 @@ section .skill
 .social img
 {
     padding: 15px;
-    
-}
-
-.social :active
-{
-    transform: scale(0.8)
 }
 
 
