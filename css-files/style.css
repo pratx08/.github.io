@@ -26,7 +26,7 @@ body
 
 .navbar .navbar-nav li a
 {
-    filter: blur(1.5px);
+    filter: blur(3.5px);
     color:white !important;
     transition: transform .2s;
 }
@@ -200,7 +200,7 @@ canvas
     margin-top: 11%;
 }
 
-@media screen and (max-width : 600px)
+/* @media screen and (max-width : 600px)
 {
     .span4 img
     {
@@ -214,7 +214,7 @@ canvas
     {
         height: auto;
     }
-}
+} */
 
 #resume
 {
