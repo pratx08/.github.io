@@ -20,7 +20,7 @@ body
 {
     .navbar
     {
-      width: auto;
+      width: 100vw;
     }
 }
 
@@ -34,7 +34,7 @@ body
 .nav-link:hover
 {
     filter: blur(0px) !important;
-    transform: scale(1.15);
+    transform: scale(1.02);
     color: white;
 }
 
