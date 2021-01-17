@@ -17,22 +17,32 @@ body
 }
 .navbar .navbar-nav li a
 {
+    filter: blur(1.5px);
     color:white !important;
+    transition: transform .2s;
 }
 
 .nav-link:hover
 {
-    box-sizing: content-box;
-    background-color: #ff027860;
-    border-radius: 5px;
+    filter: blur(0px) !important;
+    transform: scale(1.15);
     color: white;
 }
+
 
 .navbar-toggler
 {
     color: #ff0278;
 }
 
+#brand span
+{
+    display: inline-block;
+    padding-top: 0px;
+    font-size: 22px;
+    white-space: nowrap;
+    margin-left: -5px;
+}
 
 canvas
 {
@@ -43,7 +53,6 @@ canvas
 
 #particles
 {
-    filter: blur(1.8px);
     min-height: 92vh;
     max-height: fit-content;
     width: 100%;
@@ -51,6 +60,14 @@ canvas
     /* background: url("C:/Users/Prathyaksh/Downloads/bg.png") no-repeat fixed center; */
     background-size: cover;
     position: relative !important;
+}
+
+@media only screen and (max-width: 768px) 
+{
+    #particles
+    {
+      width: auto;
+    }
 }
 
 .text {
@@ -83,12 +100,14 @@ canvas
     transform: translate(-50%,-50%);
 }
 
-@media only screen and (max-width: 768px) {
-    #arrow{
+@media only screen and (max-width: 768px) 
+{
+    #arrow
+    {
       margin-top: 55%;
       width: auto;
     }
-  }
+}
 
 #arrow span
 {
@@ -137,6 +156,13 @@ canvas
     text-align: center;
     margin-top: 4%;
 }
+
+@media only screen and (max-width: 768px) {
+    #aboutbg{
+      width: auto;
+    }
+  }
+
 .span4 img {
     align-items: center;
     width: 320px;
@@ -161,6 +187,22 @@ canvas
     font-size: 18px;
     margin-left: 10px;
     margin-top: 11%;
+}
+
+@media screen and (max-width : 600px)
+{
+    .span4 img
+    {
+        margin-left: 17%;
+    }
+}
+
+@media screen and (max-width : 600px)
+{
+    .block
+    {
+        height: auto;
+    }
 }
 
 #resume
