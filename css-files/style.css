@@ -26,7 +26,7 @@ body
 
 .navbar .navbar-nav li a
 {
-    filter: blur(3.5px);
+    filter: blur(1.5px);
     color:white !important;
     transition: transform .2s;
 }
