@@ -5,6 +5,7 @@ html
 
 body
 {
+    font-family: 'Varela Round', sans-serif;
     width: 100% !important;
     margin: 0;
     padding: 0;
@@ -15,15 +16,6 @@ body
     background-color: black !important;
     z-index: 1;
 }
-
-@media only screen and (max-width: 768px) 
-{
-    .navbar
-    {
-      width: 100vw;
-    }
-}
-
 .navbar .navbar-nav li a
 {
     font-weight: 400;
@@ -32,13 +24,24 @@ body
     transition: transform .2s;
 }
 
+
+
+
 .nav-link:hover
 {
+    border-bottom: 2px solid #ff0278;
     filter: blur(0px) !important;
-    transform: scale(1.15);
+    transform: scale(1.08);
     color: white;
 }
 
+@media only screen and (max-width: 768px) 
+{
+    .nav-link:hover
+    {
+        transform: scale(1.02);
+    }
+}
 
 .navbar-toggler
 {
@@ -49,7 +52,7 @@ body
 {
     display: inline-block;
     padding-top: 0px;
-    font-size: 22px;
+    font-size: 20px;
     white-space: nowrap;
     margin-left: -5px;
 }
@@ -67,7 +70,6 @@ canvas
     max-height: fit-content;
     width: 100%;
     background-image: linear-gradient(135deg, #c33764, #1d2671);
-    /* background: url("C:/Users/Prathyaksh/Downloads/bg.png") no-repeat fixed center; */
     background-size: cover;
     position: relative !important;
 }
@@ -76,7 +78,7 @@ canvas
 {
     #particles
     {
-      width: 100vw;
+      width: auto;
     }
 }
 
@@ -165,7 +167,7 @@ canvas
 {
     padding: 25px;
     width: 50%;
-    height: 100vh; 
+    height: 70vh; 
 }
   
 #abt 
@@ -204,7 +206,6 @@ canvas
     clear: both;
 }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 768px) {
     .column {
       width: 100%;
@@ -227,7 +228,6 @@ canvas
         margin-top: 0%;
     }
 }
-
 
 .resume
 {
@@ -355,6 +355,7 @@ section .skill
 
 .project-bg
 {
+    background-image: url("bgimg.jpg");
     width: 100%;
 }  
 .project
@@ -538,4 +539,16 @@ section .skill
 {
     color: black;
     background-color: white;
+}
+
+.footer
+{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+.footer_content
+{
+    margin-top: 1.25%;
+    
 }
