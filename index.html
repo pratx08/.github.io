@@ -9,9 +9,12 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="js-files\particles.js"></script>
         <link rel="stylesheet" href="css-files\style.css">
+        <link rel="stylesheet" href="fonts.css">
+        <script src="/js/jquery.min.js"></script> 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     </head>
 
@@ -33,22 +36,22 @@
               </span>
             </button>
           
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar" data-toggle="collapse" data-target=".navbar-collapse">
+              <ul class="navbar-nav ml-auto" id="navbarcollapse">
                 <li class="nav-item" float="right">
-                  <a class="nav-link" href="#particles">HOME</a>
+                  <a class="nav-link scroll" href="#particles">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#aboutbg">ABOUT</a>
+                  <a class="nav-link scroll" href="#aboutbg">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#skill">SKILLS</a>
+                  <a class="nav-link scroll" href="#skill">SKILLS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#proj">PROJECTS</a>
+                    <a class="nav-link scroll" href="#proj">PROJECTS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contact">CONTACT</a>
+                    <a class="nav-link scroll" href="#contact">CONTACT</a>
                   </li>
               </ul>
             </div>
@@ -62,13 +65,12 @@
                 <div class="text">
                     <h1>Hello, <br /> I am Prathyaksh</h1>
                 </div>
-                <a href="#aboutbg">
+                
                 <div class="box" id="arrow">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                </a>
             </div>
 
     <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -79,7 +81,7 @@
     </div>
     <div class="row" id="abt">
         <div class="column">
-            <img class="img-left" src="pp.jpg"/ data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+            <img class="img-left" src="pp.jpg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
         </div>
         <div class="column" id = "content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
             <p>Hey there,</p>
@@ -100,7 +102,8 @@
     <hr class="accessory" id="skill">
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <section class="skills" >
+    <section class="skills">
+        <br/>
         <header style="color: white;" data-aos="fade-up" data-aos-duration="10" data-aos-delay="200"><b>SKILLS</b></header>
         <div class="skill">
             <div class="set" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" >
@@ -185,7 +188,8 @@
 
 <div class="project-bg">
     <div class="project_header">
-        <h1><b>PROJECTS</b></h1>
+        <br/>
+        <h1 data-aos="fade-up" data-aos-duration="10" data-aos-delay="400"><b>PROJECTS</b></h1>
     </div>
     <div class="project">
         
@@ -230,8 +234,8 @@
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div class="contact" id="contact">
         <div class="contact-header">
-            <br/>
-            <h1><b>CONTACT</b></h1>
+            <br/><br/>
+            <h1 data-aos="fade-down" data-aos-duration="10" data-aos-delay="10"><b>CONTACT</b></h1>
             
         </div>
         <div class="container" id="social-bg">
@@ -267,9 +271,12 @@
                 <button type="submit" class="btn btn-light" value="SUBMIT" name="send" id="bttn">SUBMIT</button>
             </form>
         </div>
-
-       
     </div>
 
+    <div class="footer">
+        <div class="footer_content">
+            <p>Copyright &copy; 2020 pratx. All Rights Reserved</p>
+        </div>
+    </div>
     </body>
 </html>
