@@ -26,15 +26,16 @@ body
 
 .navbar .navbar-nav li a
 {
-    filter: blur(1.5px);
-    color:white !important;
+    font-weight: 400;
+    color: #fff !important;
+    filter: blur(0px);
     transition: transform .2s;
 }
 
 .nav-link:hover
 {
     filter: blur(0px) !important;
-    transform: scale(1.02);
+    transform: scale(1.15);
     color: white;
 }
 
@@ -65,7 +66,7 @@ canvas
     min-height: 92vh;
     max-height: fit-content;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.93);
+    background-image: linear-gradient(135deg, #c33764, #1d2671);
     /* background: url("C:/Users/Prathyaksh/Downloads/bg.png") no-repeat fixed center; */
     background-size: cover;
     position: relative !important;
@@ -123,8 +124,8 @@ canvas
     display: block;
     width: 20px;
     height: 20px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
@@ -190,6 +191,7 @@ canvas
 
 #content
 {
+    text-align: justify;
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
@@ -227,22 +229,24 @@ canvas
 }
 
 
-#resume
+.resume
 {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    width: 200px;
-    height: 50px;
-    background-color: transparent;
-    border-color: black;
+    background-color: white;
     color: black;
+    width: 150px;
+    height: 45px;
+    border: 2px solid black;
+    transition: 0.5s ease;
 }
 
-#resume:hover
+.resume:hover
 {
     background-color: black;
     color: white;
-    transition: 0.5s ease;
+    border-color: black;
 }
 
 section > header
