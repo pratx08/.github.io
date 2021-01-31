@@ -238,6 +238,7 @@ canvas
     .img-left 
     {
         margin-top: 2%;
+        margin-left:20%;
     }
 }
 
@@ -245,6 +246,7 @@ canvas
 {
     #content
     {
+        margin-left:2%;
         margin-top: 0%;
     }
 }
