@@ -163,6 +163,26 @@ canvas
     
 }
 
+.moveup
+{
+    border: 0px solid white;
+    border-radius: 50%;
+    z-index: 100;
+    color: #fff;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+.moveup img
+{
+    margin-top: 20%;
+}
+
 .column 
 {
     padding: 25px;
